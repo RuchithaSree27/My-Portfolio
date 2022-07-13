@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+.navig {
+    background-color: transparent;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 20px;
+    position: fixed;
+}
+
+.navig ul {
+    overflow: auto;
+}
+
+.navig li {
+    float: left;
+    list-style: none;
+    margin: 5px 20px;
+}
+
+.myimg {
+    margin: 0;
+    display: flex;
+}
+
+.myimg img {
+    margin-right: 200px;
+}
+
+.myimg #name {
+    margin-top: 300px;
+    font-family: 'Macondo', cursive;
+    font-size: 400%;
+    color: whitesmoke;
+}
+
+body {
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: 2000px 8000px;
+}
+
+
+/* .container { 
+    background-color: darkseagreen;
+    border: 10px solid rgb(156, 207, 78);
+    padding: 10px 100px 10px 100px;
+    margin: 50px;
+    margin-left: 200px;
+    border-radius: 500px;
+    width: 500px;
+    display: inline-block;
+}
+
+#abtt {
+    float: left;
+    width: 50%;
+    box-shadow: 10px 13px 30px green;
+    animation: myani 1s ease-in;
+}*/
+
+@keyframes myani {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, pink 0%, white 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 80px;
+    align-items: center;
+    font-family: 'Macondo', cursive;
+    margin-top: 300px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/*#prjs {
+    float: right;
+    margin-bottom: 50px;
+    width: 50%;
+    box-shadow: 10px 13px 30px darkmagenta;
+    animation: myani1 1s ease-in;
+}
+
+@keyframes myani1 {
+    from {
+        margin-right: 100%;
+        width: 300%;
+    }
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+#acts {
+    float: left;
+    width: 50%;
+    box-shadow: 10px 13px 30px green;
+    animation: myani2 1s ease-in;
+}
+
+@keyframes myani2 {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+*/
+
+span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-style: italic;
+    color: brown;
+}
+
+#main {
+    text-align: center;
+}
+
+.btn {
+    margin: auto;
+    border-radius: 50px;
+    background-color: darkviolet;
+    padding: 6px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+a:hover {
+    color: crimson;
+    background-color: azure;
+}
+
+.btn:hover {
+    color: crimson;
+    background-color: azure;
+}
+
+.navig li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navig li a:hover {
+    color: cadetblue;
+}
