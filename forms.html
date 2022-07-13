@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <form action="/actionpage.php" autocomplete="on" target="blank_">
+        <fieldset>
+            <!--this is a border-->
+            <legend> <b>YOUR INFORMATION</b></legend>
+            <!--this is a heading-->
+            <br>
+            <!--textbox-->
+            <label for="name">NAME : </label>
+            <input type="text" id="name" name="myname">
+            <br>
+            <br>
+            <!--textbox-->
+            <label for="ht">ID : </label>
+            <input type="text" id="ht" name="myht">
+            <br>
+            <br>
+            <!--radiobuttons-->
+            <input type="radio" id="male" name="gender">
+            <label for="male">MALE</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">FEMALE</label>
+            <input type="radio" id="other" name="gender">
+            <label for="other">OTHER</label>
+            <br>
+            <br>
+            <!--checkbox-->
+            <input type="checkbox" id="true" name="true">
+            <label for="true">ABOVE FURNISHED INFORMATIONN IS TRUE</label>
+            <br>
+            <input type="checkbox" id="agree" name="true">
+            <label for="agree">I AGREE TO ALL THE TERMS AND CONDITIONS</label>
+            <br>
+            <br>
+            <!--select-->
+            <label for="food">FAVOURITE FOOD</label>
+            <select id="food" name="food">
+            <option value="homefood">HOMEFOOD</option>
+            <option value="streetfood">STREETFOOD</option>
+            <option value="hostelfood">HOSTELFOOD</option>
+            <option value="other">OTHER</option>
+        </select>
+            <br>
+            <br>
+            <!--select with size-->
+            <label for="num">FAVOURITE NUMBER: </label>
+            <select id="num" value="number" size="2">
+            <option value="0">0</option>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+
+        </select>
+            <br>
+            <br>
+            <!--button-->
+            <input type="button" id="ok" value="OK">
+            <label for="OK"></label>
+            <!--submit-->
+            <label for="submit"></label>
+            <input type="submit" id="submit" name="submit">
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
